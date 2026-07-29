@@ -19,7 +19,7 @@ import thelm.packagedauto.api.IPackageRecipeInfo;
 import thelm.packagedauto.api.IPackageRecipeType;
 import thelm.packagedauto.api.IRecipeSlotViewWrapper;
 import thelm.packagedauto.api.IRecipeSlotsViewWrapper;
-import thelm.packagedexcrafting.recipe.UltimatePackageRecipeType;
+import thelm.packagedexexcrafting.recipe.EpicPackageRecipeType;
 
 @SuppressWarnings("deprecation")
 public class LegendaryPackageRecipeType implements IPackageRecipeType {
@@ -114,7 +114,7 @@ public class LegendaryPackageRecipeType implements IPackageRecipeType {
 			result.putAll(extraPart);
 			return result;
 		}
-		return UltimatePackageRecipeType.INSTANCE.getRecipeTransferMap(recipeLayoutWrapper);
+		return EpicPackageRecipeType.INSTANCE.getRecipeTransferMap(recipeLayoutWrapper);
 	}
 
 	@Override
